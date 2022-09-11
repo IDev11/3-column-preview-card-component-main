@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    max-width: 1440px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 60vh;
+    width: 60vw;
+    margin-top: 20vh;
+    margin-left: 6vw;
+    border-radius: 10px;
+}
+
+.first-card {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.second-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third-card {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.icon {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    margin-left: 3rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: 3rem;
+    margin-right: 4.6rem;
+    line-height: 1.5rem;
+}
+
+button {
+    border-radius: 50px;
+    width: 8rem;
+    height: 2.5rem;
+    border-style: none;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.first-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.second-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.third-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.first-card:hover {
+    background-color: hsl(31, 77%, 45%);
+    transition-duration: 0.5s;
+}
+
+.second-card:hover {
+    background-color: hsl(184, 100%, 18%);
+    transition-duration: 0.5s;
+}
+
+.third-card:hover {
+    background-color: hsl(179, 100%, 9%);
+    transition-duration: 0.5s;
+}
+
+@media all and (max-width: 500px) {
+    body {
+        min-height: 1270px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1100px;
+        margin-top: 5rem;
+        margin-left: -0.3rem;
+    }
+
+    .first-card , .second-card , .third-card {
+        height: 550px;
+        width: 300px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .first-card {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .third-card {
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .icon {
+        width: 50px;
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+    p {
+        height: 2vh; 
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    button {
+        margin-top: 8.5rem;
+        margin-left: 3rem;
+    }
+}
